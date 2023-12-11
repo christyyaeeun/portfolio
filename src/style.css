@@ -22,9 +22,71 @@ nav {
   background-color: transparent !important;
 }
 
+.link-styles {
+  position: relative;
+  margin: 1em;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-link .link-styles {
+    font-size: 0.85rem;
+    margin: 0.5em;
+  }
+}
+
 .nav-link .link:hover,
+.nav-link .link:focus,
+.footer-link .link-styles:hover,
+.footer-link .link-styles:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+.nav-link .link:before,
+.footer-link .link:before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  background-color: #90cdf4;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  max-width: 0;
+  transition: max-width 500ms;
+}
+
+.nav-link .link:hover:before,
+.footer-link .link:hover:before {
+  max-width: 100%;
+  background-color: #90cdf4;
+}
+
+.nav-link .link.active:before,
+.footer-link .link.active:before {
+  max-width: 10rem;
+}
+
+/* .nav-link .link:hover,
 .nav-link .link:focus {
   outline: none;
+}
+
+.nav-link .link {
+  position: relative;
+  margin: 1em;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .nav-link .link:before {
@@ -40,31 +102,14 @@ nav {
   transition: max-width 500ms;
 }
 
-.nav-link .link {
-  position: relative;
-  margin: 1em;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  z-index: 1;
+.nav-link .link:hover:before {
+  max-width: 100%;
+  background-color: #90cdf4;
 }
 
 .nav-link .link.active:before {
   max-width: 10rem;
-}
-
-.nav-link .link:hover {
-  color: #363737;
-}
-
-
-.nav-link .link,
-.nav-link .link:visited,
-.nav-link .link:hover,
-.nav-link .link:focus {
-  color: var(--text-color);
-}
-
+} */
 
 /* Home */
 .homepage {
@@ -158,7 +203,7 @@ section span {
   font-size: 18px;
   letter-spacing: 1px;
   font-weight: 500;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   white-space: nowrap;
 }
 .hover-bg:hover .hover-text > h4 {
@@ -231,11 +276,6 @@ section span {
 }
 
 /* About */
-#about-text {
-  letter-spacing: -0.5px;
-  line-height: 1.8;
-}
-
 /* Text Animation  */
 .animated-text {
   font-weight: bold;
@@ -305,15 +345,15 @@ div.animated-text {
 #footer {
   position: relative;
   z-index: 1;
-  text-transform: uppercase;
   margin-top: auto;
 }
 
 .footer-link .flink {
   position: relative;
-  text-transform: uppercase;
   letter-spacing: 0.5px;
   z-index: 1;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 .wavy-border {
@@ -356,7 +396,7 @@ div.animated-text {
   }
 
   .animate-text {
-    font-size:xx-large
+    font-size: xx-large;
   }
 }
 

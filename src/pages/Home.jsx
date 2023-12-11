@@ -1,10 +1,10 @@
 import React, { useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
-import Contact from './Contact';
 import { Text, Container, Flex, Box, useColorModeValue } from '@chakra-ui/react'
 import { MdKeyboardArrowDown } from 'react-icons/md'
-import ProjectCards from "../components/portfolio/ProjectCards";
-import TextAnimation from "../components/home/TextAnimation";
+import ContactForm from "../components/Contact/ContactForm";
+import ProjectCards from "../components/Portfolio/ProjectCards";
+import TextAnimation from "../components/Home/TextAnimation";
 import data from "../data/data.json";
 
 
@@ -55,7 +55,7 @@ function Home() {
 
     return (
         <>
-            <Box className="intro-container" h="100vh" pt="10em" bg={modeBg}>
+            <Box className="intro-container" h="100vh" pt="10em" bg={ modeBg }>
                 <Box className="intro">
                     <Container w="100vw" display="flex" alignItems="center" justifyContent="center">
                         <Box px="6">
@@ -84,7 +84,7 @@ function Home() {
 
             <Section>
                 <div ref={ elementRef } style={ { paddingTop: "2em" } }>
-                    <Box pt={ { base: "2em", md: "3em", lg: "4em" } } bg={modeBg}>
+                    <Box pt={ { base: "2em", md: "3em", lg: "4em" } } bg={ modeBg }>
                         <ProjectCards />
                     </Box>
                 </div>
@@ -92,7 +92,7 @@ function Home() {
 
             <Section>
                 <Box className="contact-container" pb="250px" width="lg">
-                    <Contact />
+                    <ContactForm mtValue="0" />
                 </Box>
             </Section>
         </>

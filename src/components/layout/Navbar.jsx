@@ -78,7 +78,6 @@ export default function Navbar() {
 
                             <IconButton
                                 ref={ btnRef }
-                                isOpen={ isOpen }
                                 onClick={ onOpen }
                                 icon={
                                     isOpen ? <CloseIcon w={ 3 } h={ 3 } /> : <HamburgerIcon w={ 5 } h={ 5 } />
@@ -93,10 +92,10 @@ export default function Navbar() {
 
                         {/* DESKTOP NAVBAR */ }
                         <Flex className="nav-link" style={ { "--text-color": textMode, "--highlight-color": "#0461cf7d" } } fontSize="large" fontWeight="700" display={ { base: 'none', md: 'flex' } } ml={ 10 }>
-                            <NavLink className="link" to="/">Home</NavLink>
-                            <NavLink className="link" to="/about">About</NavLink>
-                            <NavLink className="link" to="/portfolio">Portfolio</NavLink>
-                            <NavLink className="link" to="/contact">Contact</NavLink>
+                            <NavLink className="link link-styles" to="/">Home</NavLink>
+                            <NavLink className="link link-styles" to="/about">About</NavLink>
+                            <NavLink className="link link-styles" to="/portfolio">Portfolio</NavLink>
+                            <NavLink className="link link-styles" to="/contact">Contact</NavLink>
                         </Flex>
                     </Flex>
                     <Button display={ { base: "none", lg: "block" } } colorScheme="blue" variant={ useColorModeValue("outline", "solid") } onClick={ handleViewResume }>View Resume</Button>
@@ -118,7 +117,7 @@ export default function Navbar() {
                         <DrawerBody>
                             <Stack bg={ useColorModeValue('white', 'gray.700') } p={ 4 }>
                                 <Flex
-                                    className="nav-link"
+                                    className="nav-link link-styles"
                                     // color={ textColor }
                                     alignItems="flex-start"
                                     style={ { "--text-color": textMode, "--highlight-color": "#0461cf7d" } }
@@ -130,10 +129,10 @@ export default function Navbar() {
                                     whiteSpace="nowrap"
                                     m="1em"
                                 >
-                                    <NavLink className="link" onClick={ handleSelect } to="/">Home</NavLink>
-                                    <NavLink className="link" to="/about" onClick={ handleSelect }>About</NavLink>
-                                    <NavLink className="link" to="/portfolio" onClick={ handleSelect }>Portfolio</NavLink>
-                                    <NavLink className="link" to="/contact" onClick={ handleSelect }>Contact</NavLink>
+                                    <NavLink className="link link-styles" onClick={ handleSelect } to="/">Home</NavLink>
+                                    <NavLink className="link link-styles" to="/about" onClick={ handleSelect }>About</NavLink>
+                                    <NavLink className="link link-styles" to="/portfolio" onClick={ handleSelect }>Portfolio</NavLink>
+                                    <NavLink className="link link-styles" to="/contact" onClick={ handleSelect }>Contact</NavLink>
 
                                 </Flex>
                             </Stack>

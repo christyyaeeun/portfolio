@@ -16,6 +16,12 @@ const theme = extendTheme({
         textMode: {
             light: "#2C2C2C",
             dark: "#ffffff",
+            errorLight: "#E53E3E",
+            errorDark: "#E53E3E",
+        },
+        drawerBg: {
+            light: "#2C2C2C",
+            dark: "#1a202c",
         },
     },
     styles: {
@@ -23,12 +29,27 @@ const theme = extendTheme({
             ".amplify-input": {
                 color: props.colorMode === "light" ? theme.colors.textMode.light : theme.colors.textMode.dark,
             },
+            ".amplify-label": {
+                color: props.colorMode === "light" ? theme.colors.textMode.light : theme.colors.textMode.dark,
+            },
+            "::placeholder": {
+                color: props.colorMode === "light" ? theme.colors.textMode.light : theme.colors.textMode.dark,
+            },
+            ".amplify-field__error-message": {
+                color: props.colorMode === "light" ? theme.colors.textMode.errorLight : theme.colors.textMode.errorDark,
+            },
             ".nav-link .link": {
                 color: props.colorMode === "light" ? theme.colors.dark[ 200 ] : theme.colors.textMode.dark,
             },
-            ".submit-btn": {
+            ".amplify-button": {
                 bg: props.colorMode === "light" ? "white" : theme.colors.blue[ 200 ],
                 color: props.colorMode === "light" ? "#2b6cb0" : "#1a202c",
+                border: props.colorMode === "light" ? "1px solid #2b6cb0" : "none",
+                _hover: {
+                    bg: props.colorMode === "light" ? "blue.50" : theme.colors.blue[ 300 ],
+                    color: props.colorMode === "light" ? "#2b6cb0" : "#1a202c",
+                    borderColor: props.colorMode === "light" ? "#2b6cb0" : theme.colors.blue[ 300 ],
+                },
             },
             "a#c-icon:hover": {
                 color: props.colorMode === "light" ? "#363737" : "white",

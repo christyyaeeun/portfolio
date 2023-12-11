@@ -36,8 +36,8 @@ const About = () => {
         <Container
           pt={ { base: "3em", md: "4em", lg: "5em" } }
           pb={ { base: "5em", md: "6em", lg: "12em" } }
-          px={ { base: "1.3em", md: "2em", lg: "3em" } }
-          maxW={ { base: "xl", md: "2xl", lg: "3xl" } }
+          px={ { base: "2rem", md: "2rem", lg: "3rem" } }
+          maxW={ { base: "md", md: "lg", lg: "2xl" } }
         >
           <Box my="2em">
             <Box>
@@ -48,7 +48,7 @@ const About = () => {
             <Flex>
               <Text
                 pb="3"
-                fontSize={ { base: "16px", md: "18px", lg: "20px" } }
+                fontSize={ { base: "md", md: "md", lg: "lg" } }
                 id="about-text"
               >
                 { aboutSummary }

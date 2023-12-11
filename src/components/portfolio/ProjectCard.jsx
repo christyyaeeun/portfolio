@@ -3,7 +3,6 @@ import {
     Box,
     Center,
     Heading,
-    Text,
     useColorModeValue,
 } from '@chakra-ui/react';
 
@@ -24,7 +23,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     imgURL,
     onClick,
 }) => {
-    
+
     return (
         <div className="portfolio-item" onClick={ onClick }>
             <Center p={ 6 }>
@@ -38,11 +37,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     rounded="md"
                     overflow="hidden"
                 >
-                    <Text className="hover-text">
+                    <div className="hover-text">
                         <Heading>{ name }</Heading>
                         { topic }
                         <h4>{ tag }</h4>
-                    </Text>
+                    </div>
                     <img src={ imgURL } className="img-responsive" alt={ name } />{ ' ' }
                 </Box>
             </Center>

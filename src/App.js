@@ -4,7 +4,7 @@ import {
 } from '@chakra-ui/react';
 import { Routes, Route } from 'react-router-dom';
 import { Home, About, Contact, Portfolio, Layout, Error } from './pages'
-import theme from "./theme";
+import theme from "./utils/theme";
 import "./style.css"
 
 function App() {
