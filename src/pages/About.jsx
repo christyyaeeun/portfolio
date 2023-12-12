@@ -2,10 +2,9 @@ import { Heading, Text, Box, Container, SimpleGrid, useColorModeValue, Flex, } f
 import { motion } from 'framer-motion'
 import { AiFillHtml5 } from 'react-icons/ai'
 import { FaCss3Alt, FaReact, FaFigma } from 'react-icons/fa'
-import { SiJavascript, SiFirebase } from 'react-icons/si'
-import { SiAwsamplify } from "react-icons/si";
+import { SiJavascript, SiFirebase, SiAwsamplify } from 'react-icons/si'
 import { TbBrandVscode } from 'react-icons/tb'
-import data from '../data/data.json'
+import data from '../data.json'
 import { motionProps } from '../utils/motionProps'
 
 const SkillIcon = ({ Icon, title, color }) => (
@@ -36,8 +35,8 @@ const About = () => {
         <Container
           pt={ { base: "3em", md: "4em", lg: "5em" } }
           pb={ { base: "5em", md: "6em", lg: "12em" } }
-          px={ { base: "2rem", md: "2rem", lg: "3rem" } }
-          maxW={ { base: "md", md: "lg", lg: "2xl" } }
+          px={ { base: "1.3em", md: "2em", lg: "3em" } }
+          maxW={ { base: "xl", md: "2xl", lg: "3xl" } }
         >
           <Box my="2em">
             <Box>
@@ -48,7 +47,7 @@ const About = () => {
             <Flex>
               <Text
                 pb="3"
-                fontSize={ { base: "md", md: "md", lg: "lg" } }
+                fontSize={ { base: "16px", md: "18px", lg: "20px" } }
                 id="about-text"
               >
                 { aboutSummary }

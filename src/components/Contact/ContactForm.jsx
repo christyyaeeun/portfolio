@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Heading, useColorModeValue, Box, useToast, } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import {
-    ContactCreateForm
-} from '../../ui-components';
+// import {
+//     ContactCreateForm
+// } from '../../ui-components';
 import { motionProps } from '../../utils/motionProps';
 
 const ContactComponent = ({ mtValue }) => {
@@ -47,7 +47,7 @@ const ContactComponent = ({ mtValue }) => {
                 >
                     <Heading>Get in Touch</Heading>
                     <Box>
-                        <ContactCreateForm onSuccess={ handleSuccess } onError={ handleError } />
+                        {/* <ContactCreateForm onSuccess={ handleSuccess } onError={ handleError } /> */ }
                     </Box>
                 </Container>
             </motion.div>

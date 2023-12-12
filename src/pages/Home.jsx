@@ -5,7 +5,7 @@ import { MdKeyboardArrowDown } from 'react-icons/md'
 import ContactForm from "../components/Contact/ContactForm";
 import ProjectCards from "../components/Portfolio/ProjectCards";
 import TextAnimation from "../components/Home/TextAnimation";
-import data from "../data/data.json";
+import data from "../data.json";
 
 
 const Animation = ({ children, delay = 0 }) => (
