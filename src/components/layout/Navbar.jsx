@@ -40,7 +40,7 @@ export default function Navbar() {
         onClose();
     }
     const handleViewResume = () => {
-        window.open('https://firebasestorage.googleapis.com/v0/b/christypark-portfolio.appspot.com/o/portfolio%20files%2Fproject%20files%2FPortfolio-Resume.pdf?alt=media&token=1ad1ce8d-6802-4015-9602-e7a0d674a318', '_blank');
+        window.open('https://firebasestorage.googleapis.com/v0/b/christypark-portfolio.appspot.com/o/portfolio%20files%2Fproject%20files%2Fchristypark-Resume.pdf?alt=media&token=04f7d303-9044-4087-846b-6f2c211a0b36', '_blank');
     };
 
     return (
