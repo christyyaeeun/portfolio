@@ -5,7 +5,7 @@ const Contact = () => {
 
     return (
         <>
-            <ContactForm mtValue="12rem" />
+            <ContactForm mtValue="8rem" />
         </>
 
     )

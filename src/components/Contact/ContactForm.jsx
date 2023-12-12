@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Heading, useColorModeValue, Box, useToast, } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-// import {
-//     ContactCreateForm
-// } from '../../ui-components';
+import {
+    ContactCreateForm
+} from '../../ui-components';
 import { motionProps } from '../../utils/motionProps';
 
 const ContactComponent = ({ mtValue }) => {
@@ -36,7 +36,6 @@ const ContactComponent = ({ mtValue }) => {
                 <Container
                     className="contact-wrap"
                     w={ { base: 'sm', md: 'md', lg: 'lg' } }
-                    maxW="lg"
                     p={ { base: '1em', md: '1.5em', lg: '2em' } }
                     mt="3em"
                     bg={ useColorModeValue('transparent', '#2c313d') }
@@ -47,7 +46,7 @@ const ContactComponent = ({ mtValue }) => {
                 >
                     <Heading>Get in Touch</Heading>
                     <Box>
-                        {/* <ContactCreateForm onSuccess={ handleSuccess } onError={ handleError } /> */ }
+                        <ContactCreateForm onSuccess={ handleSuccess } onError={ handleError } />
                     </Box>
                 </Container>
             </motion.div>
