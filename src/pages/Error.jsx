@@ -8,7 +8,6 @@ import {
     Heading,
     Text,
     Button,
-    Image,
     HStack,
 } from '@chakra-ui/react';
 import { BsArrowLeft } from 'react-icons/bs'

@@ -2,9 +2,9 @@ import React, { useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import { Text, Container, Flex, Box, useColorModeValue } from '@chakra-ui/react'
 import { MdKeyboardArrowDown } from 'react-icons/md'
-import ContactForm from "../components/Contact/ContactForm";
-import ProjectCards from "../components/Portfolio/ProjectCards";
-import TextAnimation from "../components/Home/TextAnimation";
+import ContactForm from "../components/contact/ContactForm";
+import ProjectCards from "../components/portfolio/ProjectCards";
+import TextAnimation from "../components/home/TextAnimation";
 import data from "../data.json";
 
 

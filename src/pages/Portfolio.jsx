@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import ProjectCards from '../components/Portfolio/ProjectCards'
+import ProjectCards from '../components/portfolio/ProjectCards'
 import { Box } from '@chakra-ui/react'
 import { motionProps } from '../utils/motionProps'
 
