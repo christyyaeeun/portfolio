@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 import ProjectModal from './ProjectModal';
 import data from '../../data.json';
 
-const ProjectCards = () => {
+const PortfolioComponent = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [ selectedProject, setSelectedProject ] = useState(null);
 
@@ -50,4 +50,4 @@ const ProjectCards = () => {
     );
 };
 
-export default ProjectCards;
+export default PortfolioComponent;
