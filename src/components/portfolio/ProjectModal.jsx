@@ -52,10 +52,6 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                             <Text className="project-subtitle">Roles & Responsibilities</Text>
                             <Text>{ roles }</Text>
                         </Box>
-                        {/* <Box>
-                            <Text className="project-subtitle">Tools</Text>
-                            <Text>{ tools }</Text>
-                        </Box> */}
                     </Stack>
                     <Text className="project-subtitle">About</Text>
                     <Text className="project-text">{ about }</Text>
