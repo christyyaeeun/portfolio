@@ -43,17 +43,17 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                 <DrawerBody color="white" pb="5em">
                     <Heading as="h1" mb='4'>{ name }</Heading>
                     <Text className="project-text">{ description }</Text>
-                    <Heading as="h2" className="project-subtitle" id="pb">
+                    <Heading as="h2" fontSize="xl" className="project-subtitle" id="pb">
                         Tools & Technologies
                     </Heading>
                     <SkillTags tags={ tags } marginTop="1em" />
                     <Stack direction={ { base: 'column', md: 'row' } } spacing="6" mb="1em">
                         <Box display="flex" flexDir="column">
-                            <Heading as="h2" className="project-subtitle">Roles & Responsibilities</Heading>
+                            <Heading as="h2" fontSize="xl" className="project-subtitle">Roles & Responsibilities</Heading>
                             <Text>{ roles }</Text>
                         </Box>
                     </Stack>
-                    <Heading as="h2" className="project-subtitle">About</Heading>
+                    <Heading as="h2" fontSize="xl" className="project-subtitle">About</Heading>
                     <Text className="project-text">{ about }</Text>
                     <Box mb="1em">
                         { gifURL && <VideoPlayer gifURL={ gifURL } /> }
