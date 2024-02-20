@@ -6,7 +6,7 @@ const TextAnimation = () => {
 
     return (
         <motion.div className="animated-text">
-            <Heading fontSize={ { base: "4xl", md: "5xl", lg: "6xl" } }>
+            <Heading as="h1" fontSize={ { base: "4xl", md: "5xl", lg: "6xl" } }>
                 { text.split("").map((letter, index) => (
                     <motion.span
                         key={ index }

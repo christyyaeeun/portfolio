@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
-import { Text, Container, Flex, Box, useColorModeValue } from '@chakra-ui/react'
+import { Text, Heading, Container, Flex, Box, useColorModeValue } from '@chakra-ui/react'
 import { MdKeyboardArrowDown } from 'react-icons/md'
 import ContactForm from "../components/Contact/ContactForm";
 import PortfolioComponent from "../components/Portfolio/PortfolioComponent";
@@ -56,7 +56,7 @@ function Home() {
     return (
         <>
             <Box className="intro-container" h="100vh" pt="10em" bg={ modeBg }>
-                <Box className="intro">
+                {/*  <Box className="intro">
                     <Container w="100vw" display="flex" alignItems="center" justifyContent="center">
                         <Box px="6">
                             <Animation delay={ 2 }>
@@ -72,15 +72,42 @@ function Home() {
                             </Animation>
                         </Box>
                     </Container>
+                </Box> */}
+                <Box className="intro-container" h="100vh" pt="10em" bg={ modeBg }>
+                    <Box className="intro">
+                        <Container w="100vw" display="flex" alignItems="center" justifyContent="center">
+                            <Box px="6">
+                                <Animation delay={ 2 }>
+                                    <Heading as="h1" id="intro-text" fontSize={ { base: "22px", md: "25px", lg: "35px" } }>{ headerTitle }</Heading>
+                                </Animation>
+                                <Box color={ textColor }>
+                                    <TextAnimation />
+                                </Box>
+                                <Animation delay={ 2.5 }>
+                                    <Text id="intro-text" fontSize={ { base: "16px", md: "25px", lg: "25px" } } fontWeight="400">
+                                        { headerBody }
+                                    </Text>
+                                </Animation>
+                            </Box>
+                        </Container>
+                    </Box>
+                    <Flex pt="3" justifyContent="center">
+                        <Animation delay={ 3.5 }>
+                            <Box className="btn-animation" color={ textColor }>
+                                <button id="down-arrow" aria-label="Down Arrow Button" onClick={ handleClick }><MdKeyboardArrowDown /></button>
+                            </Box>
+                        </Animation>
+                    </Flex>
                 </Box>
+
                 <Flex pt="3" justifyContent="center">
                     <Animation delay={ 3.5 }>
                         <Box className="btn-animation" color={ textColor }>
-                            <button id="down-arrow" onClick={ handleClick }><MdKeyboardArrowDown /></button>
+                            <button id="down-arrow" aria-label="Down Arrow Button" onClick={ handleClick }><MdKeyboardArrowDown /></button>
                         </Box>
                     </Animation>
                 </Flex>
-            </Box>
+            </Box >
 
             <Section>
                 <div ref={ elementRef } style={ { paddingTop: "2em" } }>

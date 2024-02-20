@@ -61,7 +61,7 @@ export default function Navbar() {
                         direction={ 'row' }
                         spacing={ 6 }>
                         <Box px="2">
-                            <Link id="c-icon" to="/" color={ useColorModeValue('#363737', 'white') }>
+                            <Link id="c-icon" aria-label="Home" to="/" color={ useColorModeValue('#363737', 'white') }>
                                 <LogoIcon w={ { base: "2em", lg: "2.2em" } } h={ { base: "2em", lg: "2.2em" } } />
                             </Link>
                         </Box>
@@ -100,7 +100,13 @@ export default function Navbar() {
                     </Flex>
                     <Button display={ { base: "none", lg: "block" } } colorScheme="blue" variant={ useColorModeValue("outline", "solid") } onClick={ handleViewResume }>View Resume</Button>
 
-                    <Button className="color-toggle" color={ useColorModeValue('#363737', 'white') } variant="ghost" display={ { base: 'none', md: 'flex', lg: 'flex' } } onClick={ toggleColorMode }>
+                    <Button
+                        className="color-toggle"
+                        aria-label="Toggle Mode"
+                        color={ useColorModeValue('#363737', 'white') }
+                        variant="ghost"
+                        display={ { base: 'none', md: 'flex', lg: 'flex' } }
+                        onClick={ toggleColorMode }>
                         { colorMode === 'light' ? <MoonIcon /> : <SunIcon /> }
                     </Button>
 
