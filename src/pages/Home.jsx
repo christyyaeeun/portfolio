@@ -78,7 +78,7 @@ function Home() {
                         <Container w="100vw" display="flex" alignItems="center" justifyContent="center">
                             <Box px="6">
                                 <Animation delay={ 2 }>
-                                    <Heading as="h1" id="intro-text" fontSize={ { base: "22px", md: "25px", lg: "35px" } }>{ headerTitle }</Heading>
+                                    <Text as="h1" id="intro-text" fontSize={ { base: "22px", md: "25px", lg: "35px" } }>{ headerTitle }</Text>
                                 </Animation>
                                 <Box color={ textColor }>
                                     <TextAnimation />
@@ -99,14 +99,6 @@ function Home() {
                         </Animation>
                     </Flex>
                 </Box>
-
-                <Flex pt="3" justifyContent="center">
-                    <Animation delay={ 3.5 }>
-                        <Box className="btn-animation" color={ textColor }>
-                            <button id="down-arrow" aria-label="Down Arrow Button" onClick={ handleClick }><MdKeyboardArrowDown /></button>
-                        </Box>
-                    </Animation>
-                </Flex>
             </Box >
 
             <Section>
