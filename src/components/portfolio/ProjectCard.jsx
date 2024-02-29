@@ -3,6 +3,7 @@ import {
     Box,
     Center,
     Heading,
+    Image,
     Text,
     useColorModeValue,
 } from '@chakra-ui/react';
@@ -43,7 +44,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                         { topic }
                         <Text>{ tag }</Text>
                     </div>
-                    <img src={ imgURL } className="img-responsive" alt={ name } />{ ' ' }
+                    <Image src={ imgURL } className="img-responsive" height="auto" width="100%" alt={ name } />{ ' ' }
                 </Box>
             </Center>
         </div>

@@ -60,7 +60,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                     </Box>
                     { imgURL && (
                         <a href={ imgURL } target="_blank" rel="noreferrer">
-                            <Image alt="Project Image" src={ imgURL } />
+                            <Image alt="Project Image" height="auto" width="100%" src={ imgURL } />
                         </a>
                     ) }
                     { figmaURL && <FigmaEmbed figmaURL={ figmaURL } /> }
